@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h1>Registration Form</h1>
+    <br>
+
+    <form>
+
+         <label for="fullname">Name </label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter Full Name" minlength="3" maxlength="60" required>
+         <br><br>
+
+         <label for="studentid"> ID </label>
+            <input type="text" id="studentid" name="studentid" placeholder="Enter Student ID"  minlength="5" maxlength="11" required>
+         <br><br>
+
+         <label for="email"> Email </label>
+            <input type="email" id="email" placeholder="Enter Email" required>
+         <br><br>
+
+        <label for="password"> Password </label>
+            <input type="password" id="password" placeholder="Enter Password" minlength="8" maxlength="15" required>
+        <br><br>
+
+        <label for="birthday"> Birthday </label>
+            <input type="date" id="birthday" name="birthday" required>
+        <br><br>
+
+        <label for="gender"> Gender </label>
+        <br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male"> Male </label>
+            <input type="radio" id="female" name="gender" value="Female" required>
+                <label for="female"> Female </label>
+        <br><br>
+
+        <label> Hobbies </label>
+        <br> 
+            <input type="checkbox" id="gaming" name="hobbies" value="Gaming"> 
+            <label for="gaming">Gaming</label> <input type="checkbox" id="sports" name="hobbies" value="Sports"> 
+            <label for="sports">Sports</label> 
+            <input type="checkbox" id="music" name="hobbies" value="Music"> 
+            <label for="music">Music</label> <input type="checkbox" id="reading" name="hobbies" value="Reading">
+            <label for="reading">Reading</label><br>
+            <input type="text" id="others" name="hobbies" placeholder="Please Indicate Others">
+       <br><br>
+    
+       <label for="address"> Address </label>
+       <br>
+            <textarea id="address" name="address" placeholder="Enter Address" minlength="5" maxlength="100" rows="5" cols="40" required>
+            </textarea>
+        <br><br>
+
+        <label for="commets"> Comments </label>
+        <br>
+        <textarea name="comments" id="comments" placeholder="Enter Your Comments" maxlength="300" rows="5"
+        cols="50" required>
+        </textarea>
+        <br><br>
+
+        <button type="submit"> Submit </button>
+        <button type="reset"> Reset </button>
+    </form>
+</body>
+</html>
